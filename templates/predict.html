@@ -1,0 +1,19 @@
+{% include "header_user.html" %}
+
+<div class="content">
+
+
+<form action="{{ url_for('user_bp.predict')}}" method="POST">
+           <table>
+        <tr>
+            <td><label for="addr">Parameters:</label></td>
+            <td><input type="text" id="addr" name="addr" placeholder="Parameters"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="submit" value="Predict"></td>
+        </tr>
+    </table>
+    </form>
+</div>
+{% include "footer.html" %}

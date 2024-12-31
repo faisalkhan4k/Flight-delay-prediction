@@ -1,0 +1,14 @@
+{% include "header_user.html" %}
+<div class="content">
+
+    {% if prediction == 0%}
+	<h2 style="color:green;">This flight might be on time</h2>
+	{% elif prediction == 1%}
+	<h2 style="color:red;">This flight might be delayed</h2>
+    {% else %}
+        <h2 style="color:red;">Prediction could not be generated. Please re-load the dataset</h2>
+	{% endif %}
+
+</div>
+{% include "footer.html" %}
+
